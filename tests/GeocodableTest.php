@@ -19,17 +19,17 @@ class GeocodableTest extends AddressableBuilder{
 
 		$silverStripe = new AddressableTestDataObject();
 		$silverStripe->Address = '101-103 Courtenay Place';
-		$silverStripe->Suburb = 'Wellington';
-		$silverStripe->Postcode = '6011';
+		$silverStripe->City = 'Wellington';
+		$silverStripe->ZIP = '6011';
 		$silverStripe->Country = 'NZ';
 		$silverStripe->write();
 		$silverStripeID = $silverStripe->ID;
 
 		$dynamic = new AddressableTestDataObject();
 		$dynamic->Address = '1526 South 12th Street';
-		$dynamic->Suburb = 'Sheboygan';
+		$dynamic->City = 'Sheboygan';
 		$dynamic->State = 'WI';
-		$dynamic->Postcode = '53081';
+		$dynamic->ZIP = '53081';
 		$dynamic->Country = 'US';
 		$dynamic->write();
 		$dynamicID = $dynamic->ID;

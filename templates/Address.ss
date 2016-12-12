@@ -1,6 +1,4 @@
 <address>
 	$Address<br>
-	$Suburb<br>
-	$State $Postcode<br>
-	$CountryName
+	$City, $State $ZIP
 </address>
