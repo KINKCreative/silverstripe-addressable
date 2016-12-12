@@ -142,7 +142,7 @@ class Addressable extends DataExtension {
 			$fields[] = new TextField('State', $label);
 		}
 
-		$postcode = new RegexTextField('Postcode', _t('Addressable.POSTCODE', 'Postcode'));
+		$postcode = new RegexTextField('ZIP', _t('Addressable.ZIP', 'ZIP'));
 		$postcode->setRegex($this->postcodeRegex);
 		$fields[] = $postcode;
 
